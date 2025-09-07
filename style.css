@@ -1,0 +1,121 @@
+
+/* style.css - Estilos personalizados para la firma de abogados */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') no-repeat center center/cover;
+    color: #fff;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 180px;   /* ancho fijo */
+    height: 180px;  /* alto fijo */
+    object-fit: cover; /* evita que se distorsione */
+    border: 3px solid #39f3e9; /* opcional: borde dorado */
+}
+
+
+.footer-custom {
+    background-color: #2c3e50; /* gris oscuro elegante */
+    color: #ffffff;
+}
+
+.footer-custom .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-custom .footer-link:hover {
+    color: #0ff1e6; /* dorado al pasar el mouse */
+}
+
+.footer-custom .footer-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-custom .footer-social:hover {
+    color: #f1c40f;
+}
+
+/* Cambiar el color principal de los botones */
+.btn-primary {
+  background-color: #ec0b0b;  /* azul oscuro elegante */
+  border-color: #ec0b0b;
+}
+
+.btn-primary:hover {
+  background-color: #21a5bd;  /* tono más oscuro al pasar el mouse */
+  border-color: #21a5bd;
+}
+
+.carousel-item img {
+    width: 100%;          /* siempre ocupa el ancho */
+    height: auto;         /* el alto se ajusta automático */
+    max-height: 500px;    /* límite de altura para que no se vea gigante */
+    object-fit: cover;    /* recorta sin deformar */
+}
+
+
+
+/* En pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;   /* más pequeña en móvil */
+  }
+}
+
+/* Coloca esto en tu style.css */
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important; /* Letras blancas */
+}
+
+.navbar .nav-link:hover {
+    color: #b0f3e7 !important; /* Al pasar el mouse se ponen doradas */
+}
